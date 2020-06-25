@@ -1,15 +1,23 @@
 {
-  "name": "static-site",
+  "name": "readmegenerator",
   "version": "1.0.0",
-  "description": "",
+  "description": "AS A developer, I want to make a readme generator, so that I can easily make a new readme for a new project",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Andrew Kleiner",
   "license": "ISC",
   "dependencies": {
     "dotenv": "^8.0.0",
     "inquirer": "^6.3.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akleiner26/ReadMe-Generator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/akleiner26/ReadMe-Generator/issues"
+  },
+  "homepage": "https://github.com/akleiner26/ReadMe-Generator#readme"
 }
