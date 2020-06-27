@@ -1,31 +1,42 @@
-# "Title"
+# Title of My Project
 
 ## About:
-"This readme is a test and I am writing some things to see how it looks. It is intended to display a fake readme that I am bullshitting as I write. Do you like Readmes? I don't. I'm not quite sure how you could. They're pretty tedious and superfluous. Is anyone actually reading thi?"
+This is my project, it is a project
 
-## Index-[About](#About)
--[Installation](#Installation)
--[Licenses](#Licenses)
--[Usage](#Usage)
--[GitHub](#GitHub)
+## Index
+- [Title of My Project](#title-of-my-project)
+  - [About:](#about)
+  - [Index](#index)
+  - [Installation:](#installation)
+  - [Licenses:](#licenses)
+  - [Usage:](#usage)
+  - [Contributors:](#contributors)
+  - [Tests:](#tests)
+  - [Questions:](#questions)
+  - [GitHub Username:](#github-username)
+  - [GitHub Repo:](#github-repo)
 
 ## Installation:
-"This is a test. In order to run the test you need to say node index.js. it requires inquierer, the generatemarkdown function, and FS."
+This is what you need to know to install my project
 
 ## Licenses:
-["MIT","Apache","BSD","GNU"]
+MIT
+Apache
 
 ## Usage:
-"This code can be used to generate a readme file for the user with minimal effort."
+This is what you need to know to run the application
+
+## Contributors:
+Me, Myself, I
 
 ## Tests:
-"Test 1 Test 2 and Test 3"
+This is how you can test my application
 
 ## Questions:
-"What am I doing with my life?"
+Who, What, When, Where, Why, How?
 
 ## GitHub Username:
-"akleiner26"
+FakeUser123
 
 ## GitHub Repo:
-"akleiner26@github.com"
+FakeUserRepo@github.com

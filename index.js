@@ -37,22 +37,22 @@ var generateMarkdown = require("./utils/generateMarkdown");
             },
             {
                 type: "input",
-                message: "Please describe applicable usage",
+                message: "Please describe to the user how to run the application",
                 name: "usage"
             },
             {
                 type: "input",
                 message: "Please list contributors",
-                name: "Contributors"
+                name: "contributors"
             },
             {
                 type: "input",
-                message: "What tests are involved in running this application?",
+                message: "How can the user test the application locally?",
                 name: "test"
             },
             {
                 type: "input",
-                message: "What questions arose while creating this?",
+                message: "What are some frequently asked questions?",
                 name: "questions"
             }
         ])
