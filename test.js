@@ -4,8 +4,7 @@ var testResponse = {
     title: "Title of My Project",
     description: "This is my project, it is a project",
     installation: "This is what you need to know to install my project",
-    username: "FakeUser123",
-    repo: "FakeUserRepo@github.com",
+    username: "akleiner26",
     license: ["MIT", "Apache"],
     usage: "This is what you need to know to run the application",
     contributors: "Me, Myself, I",
@@ -13,8 +12,5 @@ var testResponse = {
     questions: "Who, What, When, Where, Why, How?"
 }
 
-fs.writeFile("newReadMe.md", generateMarkdown(testResponse), function (err) {
-    if (err) {
-        return console.log(err);
-    }
-})
+
+fs.writeFileSync("newReadMe.md", generateMarkdown(testResponse))

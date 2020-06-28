@@ -25,11 +25,6 @@ var generateMarkdown = require("./utils/generateMarkdown");
                 name: "username"
             },
             {
-                type: "input",
-                message: "Please enter your GitHub repo address",
-                name: "repo"
-            },
-            {
                 type: "checkbox",
                 message: "Please choose applicable licenses",
                 name: "license",
