@@ -56,6 +56,9 @@ andrewjkleiner@gmail.com
 ### Final Product
 <img src = "./assets/screenshots/finalProduct.png" alt = "Final Product">
 
+### Video Tutorial
+[Link to Tutorial](https://drive.google.com/file/d/1mBpZeFxVlJb_clTgrHHB3XkdkjjEtGTx/view)
+
 
 
 
