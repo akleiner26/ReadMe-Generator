@@ -1,6 +1,6 @@
-const axios = require("axios");
 
-const generateMarkdown = (response) => {
+
+const generateMarkdown = (response, data) => {
   let html =
     response.title ? `# ${response.title}\n\n` : "";
 
@@ -29,20 +29,15 @@ const generateMarkdown = (response) => {
   html += response.test ? `## Tests:\n${response.test}\n\n` : "";
 
   html += response.questions ? `## Questions:\n${response.questions}\n\n` : "";
-
-  if (response.username) {
-    axios.get(`https://api.github.com/users/${response.username}`).then(({data}) => {
-      html += `## GitHub Username:\n${response.username}\n\n`;
-      html += `## GitHub Repo:\n${data.html_url}\n\n`;
-      html += `## GitHub Photo:\n${data.avatar_url}\n\n`;
-      html += `## GitHub Email:\n${data.email}`
-
-      return html;
-    })
-  } else {
-    return html;
+  
+  if (response.username){
+  html += `## GitHub Username:\n${response.username}\n\n`;
+  html += `## GitHub Repo:\n${data.html_url}\n\n`;
+  html += `## GitHub Photo:\n <img src="${data.avatar_url}" alt="Github Profile Image">\n\n`;
   }
+  html += response.email ? `## GitHub Email:\n${response.email}\n\n` : "";
 
+return html;
 }
 
 module.exports = generateMarkdown;

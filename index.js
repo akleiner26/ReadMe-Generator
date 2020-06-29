@@ -1,3 +1,4 @@
+const axios = require("axios");
 var fs = require("fs");
 var inquirer = require("inquirer");
 var generateMarkdown = require("./utils/generateMarkdown");
@@ -23,6 +24,11 @@ var generateMarkdown = require("./utils/generateMarkdown");
                 type: "input",
                 message: "Please enter your GitHub Username",
                 name: "username"
+            },
+            {
+                type: "input",
+                message: "Please enter your GitHub Email",
+                name: "email"
             },
             {
                 type: "checkbox",
@@ -53,10 +59,22 @@ var generateMarkdown = require("./utils/generateMarkdown");
         ])
 
     .then(function (response) {
-        fs.writeFile("newReadMe.md", generateMarkdown(response), function (err) {
-            if (err) {
-                return console.log(err);
-            }
-            
-        })
+        console.log(response);
+        if (response.username) {
+            axios.get(`https://api.github.com/users/${response.username}`).then(({data}) => {
+                var gen = generateMarkdown(response, data)
+                console.log(data);
+                // console.log(gen);
+                // console.log("console")
+                fs.writeFile("newReadMe.md", gen, function (err) {
+                    if (err) {
+                        return console.log(err);
+                    }
+                    
+                })
+             
+           
+            })
+          }
+        
     })
